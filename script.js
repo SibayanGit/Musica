@@ -1,3 +1,5 @@
+/* © 2023. Sibayan All rights reserved. */
+
 const progress = document.getElementById("progress");
 const song = document.getElementById("song");
 const controlIcon = document.getElementById("controlIcon");
@@ -6,6 +8,13 @@ const forwardButton = document.querySelector(".controls button.forward");
 const backwardButton = document.querySelector(".controls button.backward");
 const songName = document.querySelector(".music-player h1");
 const artistName = document.querySelector(".music-player p");
+
+// New volume control
+const volumeSlider = document.getElementById("volume");
+
+volumeSlider.addEventListener("input", function () {
+  song.volume = this.value;
+});
 
 const songs = [
   {
@@ -137,3 +146,5 @@ var swiper = new Swiper(".swiper", {
     prevEl: ".backward",
   },
 });
+
+/* © 2023. Sibayan All rights reserved. */
