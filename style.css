@@ -1,3 +1,5 @@
+/* © 2023. Sibayan All rights reserved. */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
 
 :root {
@@ -145,6 +147,29 @@ body {
   box-shadow: 0 6px 10px rgba(5, 36, 28, 0.3);
 }
 
+/* Volume Slider Style */
+#volume {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 60%;
+  height: 7px;
+  background: rgba(163, 162, 164, 0.4);
+  border-radius: 4px;
+  margin: 10px 0 20px;
+  cursor: pointer;
+}
+
+#volume::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(163, 162, 164, 0.9);
+  width: 16px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  outline: 4px solid var(--primary-clr);
+  box-shadow: 0 6px 10px rgba(5, 36, 28, 0.3);
+}
+
 /* Music Player Controls */
 
 .controls {
@@ -182,3 +207,5 @@ body {
 .controls button:nth-child(2):is(:hover, :focus-visible) {
   transform: scale(1.25);
 }
+
+/* © 2023. Sibayan All rights reserved. */
