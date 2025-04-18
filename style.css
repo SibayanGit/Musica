@@ -38,12 +38,12 @@ body {
 @keyframes slidein {
   0%,
   100% {
-    background-position: 20% 0%;
-    background-size: 3400px;
+    background-position: center center;
+    background-size: 220%;
   }
   50% {
-    background-position: 100% 0%;
-    background-size: 2400px;
+    background-position: center top;
+    background-size: 200%;
   }
 }
 
