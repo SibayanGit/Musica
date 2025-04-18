@@ -23,9 +23,16 @@ body {
   width: 100%;
   background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
   background-repeat: no-repeat;
+  background-size: cover; /* Add this */
+  background-position: center; /* Add this */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   animation: slidein 120s forwards infinite alternate;
+}
+
+/* Fix for dynamic height */
+body {
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 @keyframes slidein {
