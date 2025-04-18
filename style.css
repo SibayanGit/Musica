@@ -21,29 +21,33 @@ body {
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
   background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd) no-repeat center center / cover fixed;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  animation: backgroundMove 60s ease-in-out infinite alternate, zoomEffect 60s ease-in-out infinite alternate;
+  animation: moveBackground 80s ease-in-out infinite alternate, zoomBackground 60s ease-in-out infinite alternate;
 }
 
-/* Animate only background-position (up and down slightly) */
-@keyframes backgroundMove {
-  0%, 100% {
-    background-position: center top;
+/* Slow diagonal movement */
+@keyframes moveBackground {
+  0% {
+    background-position: 45% 45%;
   }
   50% {
-    background-position: center bottom;
+    background-position: 55% 55%;
+  }
+  100% {
+    background-position: 45% 45%;
   }
 }
 
-/* Optional: smooth zoom effect (very gentle) */
-@keyframes zoomEffect {
+/* Smooth zoom in/out */
+@keyframes zoomBackground {
   0%, 100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
 }
 
