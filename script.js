@@ -1,5 +1,15 @@
 /* © 2023. Sibayan All rights reserved. */
 
+// Fix for mobile viewports and background jump issue
+function setRealHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setRealHeight();
+
+// Update real height on resize
+window.addEventListener('resize', setRealHeight);
 const progress = document.getElementById("progress");
 const song = document.getElementById("song");
 const controlIcon = document.getElementById("controlIcon");
